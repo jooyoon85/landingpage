@@ -1,0 +1,376 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sell Your House Fast | [Your Company]</title>
+  <!-- 
+    You can link to Google Fonts or other CSS frameworks if you'd like.
+    Example: 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  -->
+  <style>
+    /* Basic CSS Reset & Body Setup */
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif; /* Or import a Google Font, e.g. 'Open Sans' */
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f8f8;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h1, h2, h3, h4 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .logo {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+    .headline {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .subheadline {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    /* Hero / CTA Section */
+    .hero {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #e74c3c; 
+      color: #fff;
+      padding: 15px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #c0392b;
+    }
+
+    /* Benefits Section */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .benefit-item {
+      flex: 1 1 250px;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+      min-width: 250px;
+    }
+    .benefit-item h3 {
+      color: #2980b9;
+      margin-bottom: 10px;
+    }
+
+    /* Process Section */
+    .process {
+      background: #ecf0f1;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .process h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .step {
+      flex: 1 1 200px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      min-width: 200px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+    .step h3 {
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+    .step p {
+      font-size: 0.9rem;
+    }
+
+    /* Form Section */
+    .form-section {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    .form-section h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #27ae60;
+    }
+    .lead-form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .lead-form label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .lead-form input, .lead-form textarea, .lead-form select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .submit-btn {
+      background: #27ae60;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #2ecc71;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      margin-bottom: 30px;
+    }
+    .testimonials h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #8e44ad;
+    }
+    .testimonial-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .testimonial-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+      text-align: left;
+    }
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .testimonial-author {
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aaa;
+      padding: 10px 0;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+      .benefits, .steps, .testimonial-cards {
+        flex-direction: column;
+      }
+      .benefit-item, .step, .testimonial-card {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header container">
+    <!-- Optionally insert your logo here -->
+    <img src="https://via.placeholder.com/150" alt="Logo" class="logo" />
+    <h1 class="headline">Sell Your House Fast in [Your City/State]</h1>
+    <p class="subheadline">
+      Any Condition, Any Situation—Get a Fair Cash Offer!
+    </p>
+  </div>
+
+  <!-- HERO SECTION -->
+  <div class="hero container">
+    <p>
+      Facing Foreclosure, Divorce, Inheritance, or Other Distress?<br>
+      We buy homes in any condition and close on your timeline.<br>
+      <strong>No Realtor Fees. No Repairs Needed. Quick & Easy!</strong>
+    </p>
+    <a href="#lead-form" class="cta-button">Get My Free Cash Offer</a>
+  </div>
+
+  <!-- BENEFITS SECTION -->
+  <div class="container benefits">
+    <div class="benefit-item">
+      <h3>No Commissions</h3>
+      <p>Skip realtor fees and save thousands. We handle everything directly.</p>
+    </div>
+    <div class="benefit-item">
+      <h3>Any Condition</h3>
+      <p>Hoarding? Fire Damage? Fixer-Upper? We buy properties “as-is.”</p>
+    </div>
+    <div class="benefit-item">
+      <h3>Fast Closings</h3>
+      <p>We can close in as little as 7–14 days, putting cash in your hands quickly.</p>
+    </div>
+    <div class="benefit-item">
+      <h3>Local & Trustworthy</h3>
+      <p>We understand [Your City] and focus on win-win deals for homeowners.</p>
+    </div>
+  </div>
+
+  <!-- PROCESS SECTION -->
+  <div class="container process">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Contact Us</h3>
+        <p>Call us or fill out our quick form. There's zero obligation.</p>
+      </div>
+      <div class="step">
+        <h3>2. Property Review</h3>
+        <p>We evaluate your home based on market conditions and property details.</p>
+      </div>
+      <div class="step">
+        <h3>3. Receive a Cash Offer</h3>
+        <p>We present a fair, no-hassle offer. You choose your closing date.</p>
+      </div>
+      <div class="step">
+        <h3>4. Get Paid</h3>
+        <p>Close the deal quickly. Walk away with cash and peace of mind.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM SECTION -->
+  <div class="container form-section" id="lead-form">
+    <h2>Get Your Fair Cash Offer Today!</h2>
+    <p style="text-align:center;">Fill out the form below for a no-obligation consultation.</p>
+    <form class="lead-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" placeholder="Enter your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Enter your email address" required />
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="Phone" placeholder="Enter your phone number" required />
+
+      <label for="address">Property Address</label>
+      <input type="text" id="address" name="Property Address" placeholder="Enter your property address" required />
+
+      <label for="situation">Why Are You Selling?</label>
+      <select id="situation" name="Situation">
+        <option value="">--Select an Option--</option>
+        <option value="Foreclosure">Foreclosure</option>
+        <option value="Divorce">Divorce</option>
+        <option value="Job Relocation">Job Relocation</option>
+        <option value="Inheritance">Inheritance</option>
+        <option value="Downsizing">Downsizing</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="notes">Additional Details (Optional)</label>
+      <textarea id="notes" name="Notes" rows="4" placeholder="Tell us anything else about your property or situation"></textarea>
+
+      <button class="submit-btn" type="submit">Get Cash Offer</button>
+    </form>
+  </div>
+
+  <!-- TESTIMONIALS SECTION -->
+  <div class="container testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “They bought my house in less than two weeks—totally saved me from foreclosure! Highly recommend.”
+        </p>
+        <p class="testimonial-author">- Jane D., [Your City]</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Amazing experience, no realtor fees, and a super quick close! Couldn’t be happier.”
+        </p>
+        <p class="testimonial-author">- Mark S., [Your City]</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>&copy; <span id="year"></span> [Your Company Name]. All rights reserved.</p>
+    <p>Disclaimer: We are a real estate solutions and investment firm that specializes in helping homeowners get rid of burdensome houses fast. We are investors and problem solvers who can buy your house quickly with a fair, all-cash offer.</p>
+  </footer>
+
+  <script>
+    // Simple script to auto-update the year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
